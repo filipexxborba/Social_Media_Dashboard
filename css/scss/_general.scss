@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    max-width: rem(1440);
+    margin: 0 auto;
+    padding: 0 rem(32);
+}
+
+//Logo Colors
+
+$facebook-color: hsl(208, 92%, 53%);
+$twitter-color: hsl(203, 89%, 53%);
+
+$instagram-color: hsl(37, 97%, 70%);
+$youtube-color: hsl(348, 97%, 39%);
+
+// Arrows Colors
+$up-color: hsl(163, 72%, 41%);
+$down-color: hsl(356, 69%, 56%);
+
+// Dark Theme Colors
+$very-dark-blue-bg: hsl(230, 17%, 14%);
+$very-dark-blue-top-bg: hsl(232, 19%, 15%);
+$dark-desatured-blue-card-bg: hsl(228, 28%, 20%);
+$desatured-blue-text: hsl(228, 34%, 66%);
+$white-text: hsl(0, 0%, 100%);
+
+body{
+    background-color: $very-dark-blue-bg;
+}
+
+.up{
+    color: $up-color;
+    font-weight: bold;
+}
+
+.down{
+    color: $down-color;
+    font-weight: bold;
+}
+
+main{
+    .facebook{
+        border-top: rem(4) solid $facebook-color;
+    }
+    .twitter{
+        border-top: rem(4) solid $twitter-color;
+    }
+    .instagram{
+        border-top: rem(4) solid $instagram-color;
+    }
+    .youtube{
+        border-top: rem(4) solid $youtube-color;
+    }
+}
+
+.attribution{
+    margin: rem(64) 0 rem(32);
+    color: $desatured-blue-text;
+    a{
+        color: $white-text;
+        text-decoration: none;
+    }
+}
+
+
